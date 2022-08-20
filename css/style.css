@@ -1,0 +1,589 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Bigelow+Rules&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: "Poppins", sans-serif;
+}
+
+.bg {
+    width: auto;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden !important;
+    /*justify-content: center;*/
+}
+
+.nav {
+    display: flex;
+    height: 100px;
+    justify-content: space-between;
+    margin: 40px 180px 0px 180px;
+}
+
+.logo {
+    width: 60px;
+    height: 60px;
+}
+
+.row {
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    /*justify-content: center;*/
+    align-items: center;
+    z-index: 1;
+}
+
+.col_1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 40px;
+    /* Starting position */
+    /*-moz-transform: translateY(10px);
+    -webkit-transform: translateY(10px);*/
+    /*transform: translateY(10px);*/
+    /* Apply animation to this element */
+    /*-moz-animation: vertically 1s ease;
+    -webkit-animation: vertically 1s ease;
+    animation: vertically 1s ease;*/
+}
+
+.col_2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    animation: bounceInUp 1s linear;
+}
+
+.main_heading {
+    font-weight: 300;
+    font-size: 70px;
+    line-height: 91%;
+    text-align: center;
+    letter-spacing: -0.015em;
+    color: #FFFFFF;
+    animation: bounceInUp 1s linear;
+    transition: ease;
+}
+
+.sub_heading {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 29.4318px;
+    margin-top: 20px;
+    text-align: center;
+    color: #FFFFFF;
+    animation: bounceInUp 1s linear;
+}
+
+span {
+    font-weight: 600;
+}
+
+.card {
+    width: 425px;
+    height: 257px;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.39) -213.5%, rgba(255, 255, 255, 0) 100%);
+    box-shadow: inset 0px -1px 11px rgba(255, 255, 255, 0.17), inset 0px 2px 0px rgba(255, 255, 255, 0.24);
+    border-radius: 8px;
+    padding: 30px;
+    margin-top: 20px;
+    color: #FFFFFF;
+}
+
+.card-title {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 160%;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.card-list {
+    margin-top: 10px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 160%;
+    letter-spacing: -0.02em;
+}
+
+.card-subtitle {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 160%;
+    /* or 22px */
+
+    letter-spacing: -0.02em;
+}
+
+.sub-card {
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    gap: 12px;
+    margin-top: 10px;
+
+    width: 371px;
+    height: 77px;
+
+    background: rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+}
+
+.sub-card-bulb{
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 160%;
+}
+
+.sub-card-text {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 160%;
+    /* or 19px */
+
+    letter-spacing: -0.02em;
+
+    /* Colors/Neutral/White/100% */
+
+    color: #FFFFFF;
+}
+
+
+.right-icon {
+    margin-left: auto;
+}
+
+
+.col_3 {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    z-index: 1;
+    animation: bounceInUp 2s linear;
+}
+
+.col_4 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden !important;
+}
+
+.col_3 button {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 7px 16px;
+    gap: 4px;
+    position: absolute;
+    width: 225px;
+    height: 56px;
+    background: #ECAB03;
+    border-radius: 4px;
+    color: #FFFFFF;
+    border-color: none;
+    cursor: pointer;
+}
+
+.coinpot {
+    position: absolute;
+    bottom: 0px;
+    z-index: 1;
+    animation: bounceInUp 2s linear;
+}
+
+.reflections {
+    position: relative;
+    height: 1100px;
+    width: 1100px;
+    bottom: 150px;
+    justify-content: center;
+    align-items: center;
+
+    -webkit-animation: rotating 15s linear infinite;
+    -moz-animation: rotating 15s linear infinite;
+    -ms-animation: rotating 15s linear infinite;
+    -o-animation: rotating 15s linear infinite;
+    animation: rotating 15s linear infinite;
+
+}
+
+@-webkit-keyframes rotating
+
+/* Safari and Chrome */
+    {
+    from {
+        -webkit-transform: rotate(360deg);
+        -o-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+
+    to {
+        -webkit-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+}
+
+.stars {
+    position: absolute;
+    top: 200px;
+    height: 200px;
+    width: 70%;
+    z-index: -1;
+}
+
+.svgs {
+    display: flex;
+    position: absolute;
+    bottom: 0%;
+    gap: 250px;
+}
+
+svg {
+    animation: MoveUpDown 3s linear infinite;
+    position: relative;
+    bottom: 0%;
+    /*margin: 200px;*/
+}
+
+.svg1 {
+    margin-bottom: 60px;
+}
+
+.svg2 {
+    margin-top: 100px;
+}
+
+@keyframes MoveUpDown {
+
+    0%,
+    100% {
+        bottom: 0;
+    }
+
+    50% {
+        bottom: 50px;
+    }
+}
+
+.glowstar-1 {
+    position: absolute;
+    bottom: 10px;
+    animation: myAnimation linear infinite;
+    animation-duration: 4000ms;
+    margin-left: 100px;
+}
+
+.glowstar-2 {
+    position: absolute;
+    bottom: 40px;
+    left: 0px;
+    animation: myAnimation linear infinite;
+    animation-duration: 2000ms;
+}
+
+.glowstar-3 {
+    position: absolute;
+    bottom: 60px;
+    right: 0%;
+    animation: myAnimation linear infinite;
+    animation-duration: 10000ms;
+}
+
+.glowstar-4 {
+    position: absolute;
+    bottom: 80px;
+    margin-left: 150px;
+    animation: myAnimation linear infinite;
+    animation-duration: 12000ms;
+
+}
+
+
+.glowstar {
+    position: absolute;
+    bottom: 0px;
+    animation: myAnimation linear infinite;
+    animation-duration: 6000ms;
+}
+
+
+@keyframes myAnimation {
+    0% {
+        opacity: 1;
+        bottom: 0;
+    }
+
+    50% {
+        opacity: 0.5;
+        bottom: 100px;
+    }
+
+    100% {
+        display: none;
+        opacity: 0;
+        bottom: 300px;
+    }
+}
+
+@-moz-keyframes vertically {
+    0% {
+        -moz-transform: translateY(10px);
+    }
+
+    100% {
+        -moz-transform: translateY(-10px);
+    }
+}
+
+@-webkit-keyframes vertically {
+    0% {
+        -webkit-transform: translateY(10px);
+    }
+
+    100% {
+        -webkit-transform: translateY(-10px);
+    }
+}
+
+@keyframes vertically {
+    0% {
+        -moz-transform: translateY(10px);
+        /* Browser bug fix */
+        -webkit-transform: translateY(10px);
+        /* Browser bug fix */
+        transform: translateY(10px);
+    }
+
+    100% {
+        -moz-transform: translateY(-10px);
+        /* Browser bug fix */
+        -webkit-transform: translateY(-10px);
+        /* Browser bug fix */
+        transform: translateY(-10px);
+    }
+}
+
+@keyframes bounceInUp {
+    0% {
+       opacity: 0;
+       transform: translateY(100px);
+    }
+    60% {
+       opacity: 1;
+       transform: translateY(0px);
+    }
+    100% {
+       transform: translateY(0);
+    }
+ } 
+
+@media only screen and (max-width: 1200px) {
+    .bg {
+
+        height: 100vh;
+        width: 100vw;
+    }
+
+    .nav {
+        display: flex;
+        height: 100px;
+        justify-content: space-between;
+        margin: 20px 10px 0px 20px;
+    }
+
+    .col_1 {
+        width: 400px;
+    }
+
+    .main_heading {
+        font-weight: 300;
+        font-size: 30px;
+        margin-top: 0px;
+    }
+
+    .sub_heading {
+        font-weight: 400;
+        font-size: 16px;
+    }
+
+    .card {
+        width: 335px;
+        height: 298px;
+    }
+
+    .sub-card {
+        /*display: flex;*/
+        width: 280px;
+        height: 96px;
+    }
+
+    .sub-card-text {
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 160%;
+        /* or 19px */
+
+        letter-spacing: -0.02em;
+    }
+
+    .reflections {
+        position: relative;
+        height: 1100px;
+        width: 1100px;
+        bottom: 80px;
+    }
+
+    .svgs {
+        gap: 200px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .bg {
+
+        height: 100vh;
+        width: 100vw;
+    }
+
+    .nav {
+        display: flex;
+        height: 100px;
+        justify-content: space-between;
+        margin: 20px 10px 0px 20px;
+    }
+
+    .col_1 {
+        width: 400px;
+    }
+
+    .main_heading {
+        font-weight: 300;
+        font-size: 30px;
+        margin-top: 0px;
+    }
+
+    .sub_heading {
+        font-weight: 400;
+        font-size: 16px;
+    }
+
+    .card {
+        width: 335px;
+        height: 298px;
+    }
+
+    .sub-card {
+        width: 280px;
+        height: 96px;
+    }
+
+    .sub-card-text {
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 160%;
+        /* or 19px */
+
+        letter-spacing: -0.02em;
+    }
+
+    .reflections {
+        position: relative;
+        height: 1100px;
+        width: 1100px;
+        bottom: 150px;
+    }
+
+    .svgs {
+        gap: 150px;
+    }
+}
+
+@media only screen and (max-width: 425px) {
+    .bg {
+
+        height: 100vh;
+        width: 100vw;
+    }
+
+    .nav {
+        display: flex;
+        height: 100px;
+        justify-content: space-between;
+        margin: 20px 10px 0px 20px;
+    }
+
+    .col_1 {
+        width: 400px;
+    }
+
+    .main_heading {
+        font-weight: 300;
+        font-size: 30px;
+        margin-top: 10px;
+    }
+
+    .sub_heading {
+        font-weight: 400;
+        font-size: 16px;
+    }
+
+    .card {
+        width: 335px;
+        height: 298px;
+    }
+
+    .sub-card {
+        width: 280px;
+        height: 96px;
+    }
+
+    .sub-card-text {
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 160%;
+        /* or 19px */
+
+        letter-spacing: -0.02em;
+    }
+
+    .reflections {
+        width: 300px;
+        height: 50%;
+    }
+
+    .coinpot {
+        width: 300px;
+        height: auto;
+    }
+
+    .reflections {
+        position: relative;
+        height: 1100px;
+        width: 1100px;
+        bottom: 400px;
+    }
+
+    .svgs {
+        gap: 200px;
+        position: relative;
+        bottom: -40px;
+    }
+}
